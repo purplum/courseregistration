@@ -8,10 +8,10 @@ $connect = mysqli_connect("localhost", "root", "mysql") or die ("check your serv
 
 mysqli_select_db($connect, "2008b4a5723p");
 
-echo "<h2>课程注册</h2>";
+echo "<h2>课程选择</h2>";
 $query = "SELECT course.name FROM course";
 $results = mysqli_query($connect, $query) or die(mysqli_error($connect));
-echo "<b>可选课程</b> <table  border=2>\n";
+echo "<b>可选课程列表</b> <table  border=2>\n";
 while ($rows = mysqli_fetch_assoc($results)) {
     echo "<tr>\n";
     foreach ($rows as $value) {
@@ -28,8 +28,8 @@ echo "</table>\n";
 <body>
 <form method="post" action="../registration/student_course.php">
     <br/>
-    姓名 :<input type="text" name="name"><br/>
-    课程编号 :<input type="text" name="course">
+    姓名 : <input type="text" name="name"><br/>
+    课程编号 : <input type="text" name="course">
     <br/>
     <input type="submit" class="myButton" name="submit" value="注册">
 </form>

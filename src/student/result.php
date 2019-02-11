@@ -18,7 +18,7 @@ $query = "SELECT * FROM members WHERE username='$uname' and password='$upass'";
 $results = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
 if ($row = mysqli_fetch_array($results)) {
-    echo "Welcome " . $row['username'] . "!!<br/>";
+    echo "欢迎 " . $row['username'] . "<br/>";
     echo "<table  style='width:50%' class='CSSTableGenerator'>
 用户信息<tr>
 
@@ -52,21 +52,21 @@ echo "</table>";
 </body>
 </html>
 <br/><br/>
-<form method="post" action="../../default.php" style="float:right;">
+
+
+<!--<form method="post" action="add.php" style="float:right;">-->
+<!--    <input type="submit" class="myButton" name="add" value="添加用户信息">-->
+<!--</form>-->
+
+<form method="post" action="../course/new_course_reg.php">
+    <input type="submit" class="myButton" name="add" value="开始选课">
+</form>
+<form method="post" action="../../default.php" style="float:left;" >
     <input type="submit" class="myButton" name="add" value="登出">
 </form>
 
-<form method="post" action="add.php" style="float:right;">
-    <input type="submit" class="myButton" name="add" value="添加用户信息">
-</form>
-
-<form method="post" action="../course/new_course_reg.php">
-    <input type="submit" class="myButton" name="add" value="课程注册">
-</form>
-
-
 <?php
-echo "<center><h2>已注册课程</h2></center>";
+echo "<div style=\"text-align: center;\"><h2>已注册课程</h2></div>";
 $query = "Select regis.cname, course.credit, course.instructor 
 FROM course 
 INNER JOIN regis 
