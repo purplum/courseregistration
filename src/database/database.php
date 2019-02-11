@@ -11,6 +11,7 @@ $members = "CREATE TABLE members (
 id int(4) NOT NULL auto_increment,
 username varchar(65) NOT NULL default '',
 password varchar(65) NOT NULL default '',
+sno varchar(65) NOT NULL default '' ,
 branch varchar(65) NOT NULL default '' ,
 year int(10) NOT NULL default '1',
 PRIMARY KEY (id)
