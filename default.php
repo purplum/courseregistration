@@ -36,24 +36,28 @@ if (isset($_POST['save_btn'])) {
                 <table width="100%" border="0" cellpadding="7" cellspacing="1" bgcolor="#ADD8E6">
                     <tr>
                         <td colspan="3"><strong>
-                                <center><h2>学生登录</h2></center>
+                                <div style="text-align: center;"><h2>学生登录</h2></div>
                             </strong></td>
                     </tr>
                     <tr>
                         <td></td>
+                        <td>用户名:</td>
                         <td>
-                            <center><input name="myusername" placeholder="USERNAME" type="text" id="myusername">
-                            </center>
+                            <div style="text-align: center;"><input name="myusername" placeholder="USERNAME" type="text"
+                                                                    id="myusername">
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
-                        <center>
+                        <div style="text-align: center;">
+                            <td>密码:</td>
                             <td>
-                                <center><input name="mypassword" placeholder="PASSWORD" type="password" id="mypassword">
-                                </center>
+                                <div style="text-align: center;"><input name="mypassword" placeholder="PASSWORD"
+                                                                        type="password" id="mypassword">
+                                </div>
                             </td>
-                        </center>
+                        </div>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -62,6 +66,9 @@ if (isset($_POST['save_btn'])) {
         <form name="form2" method="post" action="src/student/newreg.php">
             <td><input type="submit" class="myButton" name="newreg" value="注册"></td>
         </form>
+        <form name="form1" method="post" action="src/admin/admin_page.php">
+            <td><input type="submit" class="myButton" name="Submit" value="管理员登录"></td>
+        </form>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
     </tr>
@@ -69,9 +76,7 @@ if (isset($_POST['save_btn'])) {
 </td>
 </tr>
 </table>
-<form name="form1" method="post" action="src/admin/admin_page.php" style="float:left">
-    <input type="submit" class="myButton" name="Submit" value="管理员登录">
-</form>
+
 
 <html>
 <head>
@@ -99,8 +104,8 @@ if (isset($_POST['save_btn'])) {
 <div id="div1"></div>
 
 <footer>
-    <a href="default.php" style="color: white;">Back to home</a>
-    2019 Allen Yin. Course Registration System
+    <a href="default.php" style="color: white;"></a>
+    2019 SHYF. Course Registration System
 </footer>
 </body>
 </html>	

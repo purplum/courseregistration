@@ -1,4 +1,4 @@
-#COURSE REGISTRATION SYSTEM
+# COURSE REGISTRATION SYSTEM
 
 ## Course Registration App in PHP and MySQL
 This application runs with bundle of Apache as HTTP Server, MySQL as the database management system and PHP, the scripting languages (respectively programming languages) used for dynamic web pages and web development.
