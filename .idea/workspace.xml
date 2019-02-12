@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/student/result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="93" selection-end-column="11" />
+            <state relative-caret-position="212">
+              <caret line="79" column="18" lean-forward="true" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -82,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/default.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="365">
+              <caret line="102" column="88" selection-start-line="102" selection-start-column="88" selection-end-line="102" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -179,13 +179,18 @@
         <option value="$PROJECT_DIR$/src/admin/result1.php" />
         <option value="$PROJECT_DIR$/src/student/newreg.php" />
         <option value="$PROJECT_DIR$/src/course/Remove_Course.php" />
-        <option value="$PROJECT_DIR$/default.php" />
         <option value="$PROJECT_DIR$/src/student/insert_data.php" />
         <option value="$PROJECT_DIR$/src/registration/student_course.php" />
         <option value="$PROJECT_DIR$/src/course/new_course_reg.php" />
         <option value="$PROJECT_DIR$/src/course/edit_course.php" />
         <option value="$PROJECT_DIR$/src/course/course_edited.php" />
         <option value="$PROJECT_DIR$/src/student/result.php" />
+        <option value="$PROJECT_DIR$/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/docker/www/index.php" />
+        <option value="$PROJECT_DIR$/docker/dump/myDb.sql" />
+        <option value="$PROJECT_DIR$/docker/README.md" />
+        <option value="$PROJECT_DIR$/default.php" />
       </list>
     </option>
   </component>
@@ -208,41 +213,6 @@
             <path>
               <item name="cpr" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -267,6 +237,7 @@
       <recent name="$PROJECT_DIR$/src/database" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/image" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
@@ -294,12 +265,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549864921036</updated>
       <workItem from="1549864922541" duration="87000" />
-      <workItem from="1549865751146" duration="22542000" />
+      <workItem from="1549865751146" duration="23769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22629000" />
+    <option name="totallyTimeSpent" value="23856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -512,22 +483,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/default.php">
+    <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="240">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/www/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/dump/myDb.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/student/result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="93" selection-end-column="11" />
+        <state relative-caret-position="212">
+          <caret line="79" column="18" lean-forward="true" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#center#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="102" column="88" selection-start-line="102" selection-start-column="88" selection-end-line="102" selection-end-column="88" />
         </state>
       </provider>
     </entry>

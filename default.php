@@ -100,6 +100,7 @@ if (isset($_POST['save_btn'])) {
         }
     </script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="shortcut icon" href="http://www.softaculous.com/ampps/images/favicon.ico"
 </head>
 <body>
 <div id="div1"></div>
