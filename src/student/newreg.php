@@ -20,10 +20,9 @@ mysqli_select_db($connect, "2008b4a5723p");
     <br/>
     <h2>学生注册</h2>
     姓名 :<input type="text" name="name"><br/>
+    学号 :<input type="text" name="uno"><br/>
     密码 :<input type="password" name="pass"><br/>
-    Branch :<input type="text" name="branch"><br/>
-    Year of passing :<input type="text" name="year"><br/>
-
+    年级 :<input type="text" name="branch"><br/>
 
     <input type="submit" class="myButton" name="submit" value="Register">
 

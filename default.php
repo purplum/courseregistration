@@ -4,6 +4,7 @@ session_destroy();
 session_start();
 $_SESSION['authuser'] = 1;
 
+
 if (isset($_POST['save_btn'])) {
     //write some of your code here, if necessary
 
@@ -16,7 +17,7 @@ if (isset($_POST['save_btn'])) {
     $_SESSION['pass'] = $upass;
 
     mysqli_select_db($connect, "2008b4a5723p");
-    $query = "SELECT * FROM members WHERE username='$uname' and password='$upass'";
+    $query = "SELECT * FROM members WHERE uno='$uname' and password='$upass'";
 
     $results = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
@@ -41,7 +42,7 @@ if (isset($_POST['save_btn'])) {
                     </tr>
                     <tr>
                         <td></td>
-                        <td>用户名:</td>
+                        <td>学号:</td>
                         <td>
                             <div style="text-align: center;"><input name="myusername" placeholder="USERNAME" type="text"
                                                                     id="myusername">

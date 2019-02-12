@@ -22,7 +22,9 @@ if ($_SESSION['authuser'] != 1) {
 
     课程名称 : <input type="text" name="name"><br/>
     课时 :   <input type="text" name="credit"><br/>
-    教师 :   <input type="text" name="instructor"><br/><br/><br/>
+    教师 :   <input type="text" name="instructor"><br/>
+    可选人数 :   <input type="text" name="totalreg"><br/>
+    <br/><br/>
 
     <input type="submit" class="myButton" name="submit" value="添加">
 

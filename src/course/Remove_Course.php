@@ -10,11 +10,11 @@ $connect = mysqli_connect("localhost", "root", "mysql") or die ("check your serv
 mysqli_select_db($connect,"2008b4a5723p");
 
 
-$remove = "DELETE FROM regis WHERE  cname='$_GET[cname]' and uname='$_GET[uuname]'";
+$remove = "DELETE FROM regis WHERE  cno='$_GET[cname]' and uno='$_GET[uuname]'";
 
 $results=mysqli_query($connect,$remove) or die(mysqli_error($connect));
 
-echo " 成功移除课程<br/><a href='../../default.php'>返回</a>";
+echo " 成功移除课程<br/><a href='../student/result.php'>返回</a>";
 
 
 

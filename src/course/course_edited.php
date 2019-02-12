@@ -12,12 +12,12 @@ $name = $_POST['name'];
 $course = $_POST['course'];
 $new = $_POST['new'];
 
-if ($_SESSION['authuser'] != $name) {
+if ($_SESSION['username'] != $name) {
     echo "您不能修改其他人的课程!";
     exit();
 }
 
-$query = "update regis SET cname = '$new' WHERE uname = '$name' AND cname = '$course'";
+$query = "update regis SET cno = '$new' WHERE uno = '$name' AND cno = '$course'";
 $results = mysqli_query($connect, $query) or die(mysqli_error($connect));
 echo "<a href='edit_course.php'>返回</a><br/>课程修改成功";
 

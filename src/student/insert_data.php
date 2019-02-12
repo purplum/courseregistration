@@ -11,18 +11,18 @@ mysqli_select_db($connect, "2008b4a5723p");
 $name = $_POST['name'];
 $pass = $_POST['pass'];
 $branch = $_POST['branch'];
-$year = $_POST['year'];
+$uno = $_POST['uno'];
 
-if ($name == '' or $pass == '' or $branch == '' or $year == "1")
-    echo "注册错误";
+if ($name == '' or $pass == '' or $branch == '' or $uno == '')
+    echo "注册信息错误";
 
 else {
-    $insert = "INSERT INTO members(username,password,branch,year)
-values('$name','$pass','$branch','$year')";
+    $insert = "INSERT INTO members(username,password,branch,uno)
+values('$name','$pass','$branch','$uno')";
 
     $results = mysqli_query($connect, $insert) or die(mysqli_error($connect));
 
-    echo " 成功添加信息";
+    echo " 成功添加学生 [$name] 信息 <br/>";
 }
 ?>
 <form method="post" action="../../default.php">

@@ -22,7 +22,7 @@ $_SESSION['username'] = $uname;
 $_SESSION['pass'] = $upass;
 
 mysqli_select_db($connect, "2008b4a5723p");
-$query = "SELECT id,name,credit,instructor FROM course ";
+$query = "SELECT id,name,credit,currentreg,totalreg,instructor FROM course ";
 
 $results = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
@@ -33,16 +33,20 @@ echo "<table  style='width:50%' class='CSSTableGenerator'>
 <th>课程名称</th>
 <th>课时</th>
 <th>教师</th>
+<th>已选人数</th>
+<th>最大人数</th>
 </tr>";
 while ($rows = mysqli_fetch_array($results)) {
     echo "<tr>";
-        echo "<td>" . $rows['id'] . "</td>";
-        echo "<td>" . $rows['name'] . "</td>";
-        echo "<td>" . $rows['credit'] . "</td>";
-        echo "<td>" . $rows['instructor'] . "</td>";
-        echo "<td><a href='Remove_Course.php?cname=$rows[cname]&uuname=$uname'>移除</a></td>\n";
+    echo "<td>" . $rows['id'] . "</td>";
+    echo "<td>" . $rows['name'] . "</td>";
+    echo "<td>" . $rows['credit'] . "</td>";
+    echo "<td>" . $rows['instructor'] . "</td>";
+    echo "<td>" . $rows['currentreg'] . "</td>";
+    echo "<td>" . $rows['totalreg'] . "</td>";
+    echo "<td><a href='Remove_Course.php?cname=$rows[cname]&uuname=$uname'>移除</a></td>\n";
 
-        echo "</tr><br>\n";
+    echo "</tr><br>\n";
 
 }
 echo "</table></center>\n";

@@ -12,11 +12,11 @@ $connect = mysqli_connect("localhost", "root", "mysql") or die ("check your serv
 $name = $_SESSION['username'];
 mysqli_select_db($connect, "2008b4a5723p");
 echo "被学生 $name 注册的课程列表 :<br/>";
-$query = "Select regis.cname, course.credit, course.instructor 
+$query = "Select regis.cno, course.credit, course.instructor 
 FROM course 
 INNER JOIN regis 
-ON course.name=regis.cname 
-AND regis.uname= '$name'";
+ON course.id=regis.cno 
+AND regis.uno= '$name'";
 
 $results = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
@@ -35,8 +35,8 @@ echo "</table>\n";
 <br/>
 <br/>
 <form method="post" action="course_edited.php">
-    学生姓名 :<input type="text" name="name"><br/>
-    要变更的课程编号:<input type="text" name="course"><br/>
+    学生学号 :<input type="text" name="name"><br/>
+    旧的(要变更的)课程编号:<input type="text" name="course"><br/>
     新的课程编号:<input type="text" name="new"><br/><br/>
 
     <input type="submit" class="myButton" name="submit" value="变更">

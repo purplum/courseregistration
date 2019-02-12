@@ -13,27 +13,27 @@ $_SESSION['username'] = $uname;
 $_SESSION['pass'] = $upass;
 
 mysqli_select_db($connect, "2008b4a5723p");
-$query = "SELECT * FROM members WHERE username='$uname' and password='$upass'";
+$query = "SELECT * FROM members WHERE uno='$uname' and password='$upass'";
 
 $results = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
 if ($row = mysqli_fetch_array($results)) {
     echo "欢迎 " . $row['username'] . "<br/>";
     echo "<table  style='width:50%' class='CSSTableGenerator'>
+    <tr></tr>
 用户信息<tr>
 
 <th>姓名</th>
-
+<th>学号</th>
 <th>年级</th>
-<th>毕业年份</th>
 </tr>";
 
     echo "<tr>";
 
     echo "<td>" . $row['username'] . "</td>";
-
+    echo "<td>" . $row['uno'] . "</td>";
     echo "<td>" . $row['branch'] . "</td>";
-    echo "<td>" . $row['year'] . "</td>";
+
     echo "</tr>";
 } else {
     echo "LOGIN FAILED(INVALID USERNAME OR PASSWORD)";
@@ -67,31 +67,31 @@ echo "</table>";
 
 <?php
 echo "<div style=\"text-align: center;\"><h2>已注册课程</h2></div>";
-$query = "Select regis.cname, course.credit, course.instructor 
+$query = "Select regis.cno, course.name, course.credit, course.instructor , course.currentreg
 FROM course 
 INNER JOIN regis 
-ON course.name=regis.cname 
-AND regis.uname= '$uname';";
+ON course.id=regis.cno 
+AND regis.uno= '$uname';";
 
 $results = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
-echo "<center><table style='width:50%' class='CSSTableGenerator'><tr><td></td><td><b>课程编号</b></td><td><b>课时</b></td><td><b>教师</b></td></tr>\n";
+echo "<center><table style='width:50%' class='CSSTableGenerator'><tr><td><b>课程编号</b></td><td><b>课程名称</b></td><td><b>课时</b></td><td><b>教师</b></td><td><b>已选人数</b></td><td></td></tr>\n";
 while ($rows = mysqli_fetch_assoc($results)) {
-    echo "<tr><td><a href='Remove_Course.php?cname=$rows[cname]&uuname=$uname'>移除</a></td>\n";
+    echo "<tr>\n";
     foreach ($rows as $value) {
         echo "<td>\n";
         echo $value;
         echo "</td>\n";
     }
-    echo "</tr><br>\n";
+    echo "<td><a href='../course/Remove_Course.php?cname=$rows[cno]&uuname=$uname'>移除</a></td></tr><br>\n";
 }
 echo "</table></center>\n";
 ?>
 <br/>
 
-<form method="get" action="../course/edit_course.php" style="float:right">
-    <input type="submit" class="myButton" name="add" value="编辑课程">
-</form>
+<!--<form method="get" action="../course/edit_course.php" style="float:right">-->
+<!--    <input type="submit" class="myButton" name="add" value="编辑课程">-->
+<!--</form>-->
 
 <footer>
     <a href="../../default.php" style="color: white;">Back to home</a>

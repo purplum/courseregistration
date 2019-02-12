@@ -11,13 +11,14 @@ mysqli_select_db($connect, "2008b4a5723p");
 $name = $_POST['name'];
 $credit = $_POST['credit'];
 $instructor = $_POST['instructor'];
+$totalreg = $_POST['totalreg'];
 
-if ($name == '' or $credit == '' or $instructor == '')
+if ($name == '' or $credit == '' or $instructor == '' or $totalreg == '')
     echo "注册错误";
 
 else {
-    $insert = "INSERT INTO course(name,credit,instructor)
-values('$name','$credit','$instructor')";
+    $insert = "INSERT INTO course(name,credit,totalreg,instructor)
+values('$name','$credit','$totalreg','$instructor')";
 
     $results = mysqli_query($connect, $insert) or die(mysqli_error($connect));
 
